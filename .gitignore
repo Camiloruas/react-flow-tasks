@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+/node_modules
+
+# Build output
+/dist
+/dist-ssr
+
+# Vite
+.vite/
+.cache
+vite.config.js.timestamp-*.mjs
+
+# Local secrets
+.env
+.env.*
+!/.env.example
+*.local
+
+# Linting/Formatting
+.eslintignore
+.prettierignore
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
