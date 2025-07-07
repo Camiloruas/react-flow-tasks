@@ -42,7 +42,7 @@ function App() {
 
   function onTaskAdd(title, description) {
     const newTasks = {
-      id: v4(),
+      id: v4(), 
       title: title,
       description: description,
       isComplete: false,
