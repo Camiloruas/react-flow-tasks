@@ -1,46 +1,46 @@
-#  React Flow Tasks: Gerenciador de Tarefas Moderno
+# React Flow Tasks: Gerenciador de Tarefas
 
 Um aplicativo web interativo e responsivo para gerenciamento de tarefas, desenvolvido com foco em uma experiência de usuário fluida para organizar suas atividades diárias.
 
-##  Funcionalidades
+## Funcionalidades
 
-* **Adicionar Tarefas:** Crie novas tarefas com título e descrição.
+- **Adicionar Tarefas:** Crie novas tarefas com título e descrição.
 
-* **Visualizar Tarefas:** Exiba sua lista de tarefas de forma clara e organizada.
+- **Visualizar Tarefas:** Exiba sua lista de tarefas de forma clara e organizada.
 
-* **Marcar como Concluída:** Alterne o status de conclusão de cada tarefa.
+- **Marcar como Concluída:** Alterne o status de conclusão de cada tarefa.
 
-* **Excluir Tarefas:** Remova tarefas que não são mais necessárias da sua lista.
+- **Excluir Tarefas:** Remova tarefas que não são mais necessárias da sua lista.
 
-* **Detalhes da Tarefa:** Visualize informações detalhadas de cada tarefa em uma página dedicada.
+- **Detalhes da Tarefa:** Visualize informações detalhadas de cada tarefa em uma página dedicada.
 
-##  Importante: Persistência de Dados
+## Importante: Persistência de Dados
 
 Atualmente, as tarefas são armazenadas apenas na memória do navegador. Isso significa que, **se você recarregar a página ou fechar o navegador, todas as tarefas serão perdidas.**
 
-A persistência de dados (salvar as tarefas de forma permanente) é uma funcionalidade que será implementada em futuras atualizações, conectando o aplicativo a um backend robusto.
+A persistência de dados (salvar as tarefas de forma permanente) é uma funcionalidade que será implementada em futuras atualizações, conectando o aplicativo a um backend.
 
-##  Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 Este projeto é construído com as seguintes tecnologias e bibliotecas:
 
-* **React.js:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **React.js:** Biblioteca JavaScript para construção de interfaces de usuário.
 
-* **Vite:** Ferramenta de build e servidor de desenvolvimento otimizado para projetos web modernos.
+- **Vite:** Ferramenta de build e servidor de desenvolvimento otimizado para projetos web modernos.
 
-* **Tailwind CSS:** Framework CSS "utility-first" para estilização rápida e responsiva.
+- **Tailwind CSS:** Framework CSS "utility-first" para estilização rápida e responsiva.
 
-* **React Router DOM:** Para gerenciamento de rotas e navegação em Single Page Applications (SPAs).
+- **React Router DOM:** Para gerenciamento de rotas e navegação em Single Page Applications (SPAs).
 
-* **Lucide React:** Biblioteca de ícones leve e moderna.
+- **Lucide React:** Biblioteca de ícones leve e moderna.
 
-* **UUID:** Para geração de identificadores únicos universais para as tarefas.
+- **UUID:** Para geração de identificadores únicos universais para as tarefas.
 
-##  Demonstração Online
+## Demonstração Online
 
-[Clique aqui para acessar o app](https://react-flow-tasks-git-main-camilos-projects-0cde7ca6.vercel.app/)
+## [Clique aqui para acessar o app](https://react-flow-tasks-git-main-camilos-projects-0cde7ca6.vercel.app/)
 
-##  Como Rodar o Projeto Localmente
+## Como Rodar o Projeto Localmente
 
 Siga os passos abaixo para configurar e executar o projeto em sua máquina:
 
@@ -70,17 +70,17 @@ Siga os passos abaixo para configurar e executar o projeto em sua máquina:
 
    O aplicativo estará disponível em `http://localhost:5173` (ou outra porta indicada pelo Vite).
 
-##  Próximos Passos e Melhorias (Roadmap)
+## Próximos Passos e Melhorias (Roadmap)
 
-* **Persistência de Dados:** Implementar a conexão com um backend (como Node.js/NestJS com PostgreSQL) para salvar e gerenciar as tarefas de forma permanente.
+- **Persistência de Dados:** Implementar a conexão com um backend (como Node.js/NestJS com PostgreSQL) para salvar e gerenciar as tarefas de forma permanente.
 
-* **Autenticação de Usuários:** Adicionar funcionalidades de registro e login.
+- **Autenticação de Usuários:** Adicionar funcionalidades de registro e login.
 
-* **Melhorias na Experiência do Usuário (UX):** Refinar mensagens de validação e feedback visual, substituindo alertas por componentes de notificação.
+- **Melhorias na Experiência do Usuário (UX):** Refinar mensagens de validação e feedback visual, substituindo alertas por componentes de notificação.
 
-* **Testes:** Adicionar testes unitários e de integração para garantir a robustez do código.
+- **Testes:** Adicionar testes unitários e de integração para garantir a robustez do código.
 
-##  Contribuições
+## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para explorar o código, abrir issues ou enviar pull requests.
 
