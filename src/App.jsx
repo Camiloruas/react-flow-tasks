@@ -3,6 +3,7 @@ import AddTask from './components/AddTask';
 import Tasks from './components/Tasks';
 import EditTask from './components/EditTask'; // Importe o componente EditTask
 import useTasks from './hooks/useTasks'; // Importe o hook useTasks
+import Footer from './components/Footer'; // Importe o componente Footer
 
 function App() {
   const initialTasks = [
@@ -57,6 +58,7 @@ function App() {
           onTaskDelete={deleteTask}
           onTaskEdit={setEditingTask} // Passa a função para abrir o modal
         />
+        <Footer />
       </div>
       {editingTask && (
         <EditTask
