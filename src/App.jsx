@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import AddTask from './components/AddTask';
 import Tasks from './components/Tasks';
-import {v4} from 'uuid';
+import EditTask from './components/EditTask'; // Importe o componente EditTask
+import useTasks from './hooks/useTasks'; // Importe o hook useTasks
 
 function App() {
-  const [tasks, setTasks] = useState([
+  const initialTasks = [
     {
       id: 1,
       title: 'Estudar Programação',
@@ -33,31 +34,14 @@ function App() {
       description: 'Estudar Inglês para se tornar um desenvolvedor global',
       isComplete: false,
     },
-  ]);
+  ];
 
-  function onTaskDelete(taskId) {
-    const newTasks = tasks.filter((task) => task.id !== taskId);
-    setTasks(newTasks);
-  }
+  const { tasks, addTask, deleteTask, toggleTask, editTask } = useTasks(initialTasks);
+  const [editingTask, setEditingTask] = useState(null); // Estado para controlar a tarefa em edição
 
-  function onTaskAdd(title, description) {
-    const newTasks = {
-      id: v4(), 
-      title: title,
-      description: description,
-      isComplete: false,
-    };
-    setTasks([...tasks, newTasks]);
-  }
-
-  function onTaskClick(taskId) {
-    const newTasks = tasks.map((task) => {
-      if (task.id === taskId) {
-        return { ...task, isComplete: !task.isComplete };
-      }
-      return task;
-    });
-    setTasks(newTasks);
+  function handleTaskEdit(taskId, title, description) {
+    editTask(taskId, title, description);
+    setEditingTask(null); // Fecha o modal após a edição
   }
 
   return (
@@ -66,13 +50,21 @@ function App() {
         <h1 className="text-3xl text-slate-100 font-bold text-center  ">
           Gerenciador de Tarefas
         </h1>
-        <AddTask onTaskAdd={onTaskAdd} />
+        <AddTask onTaskAdd={addTask} />
         <Tasks
           tasks={tasks}
-          onTaskClick={onTaskClick}
-          onTaskDelete={onTaskDelete}
+          onTaskClick={toggleTask}
+          onTaskDelete={deleteTask}
+          onTaskEdit={setEditingTask} // Passa a função para abrir o modal
         />
       </div>
+      {editingTask && (
+        <EditTask
+          task={editingTask}
+          onTaskEdit={handleTaskEdit}
+          onCancel={() => setEditingTask(null)} // Fecha o modal ao cancelar
+        />
+      )}
     </div>
   );
 }

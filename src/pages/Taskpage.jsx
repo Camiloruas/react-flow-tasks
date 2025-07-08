@@ -25,8 +25,8 @@ function Taskpages() {
           <h2 className="text-2xl text-slate-100 font-bold">
             Detalhes da Tarefa
           </h2>
-          <p className="text-slate-200">Título: {title}</p>
-          <p className="text-slate-200">Descrição: {description}</p>
+          <p className="text-slate-200"><strong>Título:</strong> {title}</p>
+          <p className="text-slate-200"><strong>Descrição:</strong> {description}</p>
         </div>
       </div>
     </div>

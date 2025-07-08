@@ -1,7 +1,8 @@
-import { ChevronRightIcon, TrashIcon } from 'lucide-react';
+import { ChevronRightIcon, TrashIcon, PencilIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function Tasks({ tasks, onTaskClick, onTaskDelete }) {
+function Tasks({ tasks, onTaskClick, onTaskDelete, onTaskEdit }) {
   const navigate = useNavigate();
   function onSeeDetailsClick(task) {
     const query = new URLSearchParams();
@@ -29,6 +30,13 @@ function Tasks({ tasks, onTaskClick, onTaskDelete }) {
           </button>
           <span className="mx-1"></span>
           <button
+            onClick={() => onTaskEdit(task)} // Abre o modal de edição
+            className="bg-slate-400 p-2 rounded-md text-white"
+          >
+            <PencilIcon />
+          </button>
+          <span className="mx-1"></span>
+          <button
             onClick={() => onTaskDelete(task.id)} // CORRIGIDO: agora chama a função corretamente
             className="bg-slate-400 p-2 rounded-md text-white"
           >
@@ -41,3 +49,10 @@ function Tasks({ tasks, onTaskClick, onTaskDelete }) {
 }
 
 export default Tasks;
+
+Tasks.propTypes = {
+  tasks: PropTypes.array.isRequired,
+  onTaskClick: PropTypes.func.isRequired,
+  onTaskDelete: PropTypes.func.isRequired,
+  onTaskEdit: PropTypes.func.isRequired,
+};

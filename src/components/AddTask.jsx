@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 function AddTask({ onTaskAdd }) {
   const [title, setTitle] = useState('');
@@ -40,3 +41,7 @@ function AddTask({ onTaskAdd }) {
 }
 
 export default AddTask;
+
+AddTask.propTypes = {
+  onTaskAdd: PropTypes.func.isRequired,
+};
