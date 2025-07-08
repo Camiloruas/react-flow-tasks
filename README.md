@@ -48,3 +48,13 @@ npm install
 # Inicie o servidor de desenvolvimento
 npm run dev
 ```
+
+### Se quiser bater um papo, tirar dúvidas ou trocar ideias sobre o projeto, fique à vontade para me chamar:!
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Camilo%20Ruas-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/camilo-ruas-3a2a6425/)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white&width=120)](https://wa.me/5579998448030)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:miloruas@gmail.com)
+
+</div>

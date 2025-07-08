@@ -1,5 +1,6 @@
 import { ChevronLeftIcon } from 'lucide-react';
 import { useNavigate, useSearchParams } from 'react-router-dom'; // ← Corrigido aqui
+import Footer from '../components/Footer'; // Importe o componente Footer
 
 function Taskpages() {
   const navigate = useNavigate(); // ← Agora funciona
@@ -28,6 +29,7 @@ function Taskpages() {
           <p className="text-slate-200"><strong>Título:</strong> {title}</p>
           <p className="text-slate-200"><strong>Descrição:</strong> {description}</p>
         </div>
+        <Footer />
       </div>
     </div>
   );
