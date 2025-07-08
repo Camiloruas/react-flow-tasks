@@ -39,10 +39,6 @@ const useTasks = (initialTasks) => {
     dispatch({ type: 'ADD_TASK', payload: { title, description } });
   };
 
-  const editTask = (id, title, description) => {
-    dispatch({ type: 'EDIT_TASK', payload: { id, title, description } });
-  };
-
   const deleteTask = (id) => {
     dispatch({ type: 'DELETE_TASK', payload: { id } });
   };
@@ -51,7 +47,7 @@ const useTasks = (initialTasks) => {
     dispatch({ type: 'TOGGLE_TASK', payload: { id } });
   };
 
-  return { tasks, addTask, deleteTask, toggleTask, editTask };
+  return { tasks, addTask, deleteTask, toggleTask };
 };
 
 export default useTasks;
